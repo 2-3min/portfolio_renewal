@@ -13,14 +13,16 @@
   /* Font Size */
   --font-large: 48px;
   --font-medium: 28px;
-  --font-regular: 18px;
+  --font-regular: 22px;
   --font-small: 16px;
   --font-micro: 14px;
 
   /* Font weight */
+  --weight-super-bold: 900;
   --weight-bold: 700;
   --weight-semi-bold: 600;
-  --weight-regular: 400;
+  --weight-regular: 500;
+  --weight-semi-regular: 400;
 }
 
 /* Universal Tags */
@@ -35,7 +37,8 @@ body {
 }
 
 section {
-  padding: 50px;
+  padding: 40px;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -52,6 +55,7 @@ li {
   list-style: none;
 }
 
+
 .notion,
 .github {
   width: 65px;
@@ -60,6 +64,7 @@ li {
 
   padding: 5px 4px;
 }
+
 
 
 /* Typography */
@@ -91,6 +96,19 @@ p {
   margin: 4px 0;
 }
 
+dt {
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  margin: 8px 0;
+}
+
+dd {
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  margin: 8px 0;
+}
+
 /* Navbar */
 #navbar {
   display: flex;
@@ -104,15 +122,17 @@ p {
 .navbar__logo img{
   width: 90px;
   height: 65px;
+  margin-left: 15px;
 }
 
 .navbar__menu {
   display: flex;
   flex-direction: row;
+  margin-right: 15px;
 }
 
 .navbar__menu__item {
-  padding: 0px 15px;
+  padding: 0px 20px;
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
   color: var(--color-white);
@@ -137,4 +157,37 @@ p {
   height: 230px;
   border-radius: 70%;
   border: 2px solid var(--color-white);
+}
+
+.home__link {
+  padding-top: 15px;
+}
+
+/* Project */
+.project {
+  max-width: 1200px;
+}
+
+.project__slider {
+  display: flex;
+  width: 100%;
+}
+
+.project__img img {
+  width: 900px;
+  height: 450px;
+}
+
+/* CONTACT */
+.contact {
+  background: var(--color-secondary--LightBlue);
+}
+
+
+@media screen and (max-width:1025px){
+  /* Project */
+  .project__item img {
+    width: 480px;
+    height: 250px;
+  }
 }
