@@ -66,7 +66,6 @@ li {
 }
 
 
-
 /* Typography */
 h1 {
   font-size: var(--font-large);
@@ -165,28 +164,55 @@ dd {
 
 /* Project */
 .project {
-  max-width: 1200px;
+  position: relative;
+  padding: 40px 0px;
+  max-width: 1000px;
+  overflow: hidden;
 }
 
 .project__slider {
   display: flex;
-  width: 100%;
+  width: calc(100% * 3);
+  /* animation: slide 10s infinite; */
 }
 
-.project__img img {
-  width: 900px;
-  height: 450px;
+.project__item {
+  width: calc(100% / 3);
 }
+
+
+.project__img > .main-img {
+  width: 1000px;
+  height: 500px;
+}
+
+.project__img > .arrow-button {
+  position: absolute;
+  top: 47%;
+  width: 95px;
+  height: 100px;
+
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+  z-index: 2;
+}
+
+.next {
+  right: 0
+}
+
 
 /* CONTACT */
 .contact {
   background: var(--color-secondary--LightBlue);
 }
 
-
 @media screen and (max-width:1025px){
   /* Project */
-  .project__item img {
+  .project__img > .main-img {
     width: 480px;
     height: 250px;
   }
