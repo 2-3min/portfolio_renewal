@@ -18,8 +18,8 @@ prevButton.addEventListener("click", () => {
   counter--;
   projectSlider.style.transform = `translateX(${-widthSize * counter}px)`;
   projectSlider.style.transition = 'transform 0.4s ease-in-out';
-  prevButton.style.display = counter === 0 ? 'none' : 'inline';
-  nextButton.style.display = counter === (projectItems.length - 1) ? 'none' : 'inline';
+  prevButton.style.display = (counter === 0 ? 'none' : 'inline');
+  nextButton.style.display = (counter === (projectItems.length - 1) ? 'none' : 'inline');
 });
 
 
@@ -27,8 +27,8 @@ nextButton.addEventListener("click", () => {
   counter++;
   projectSlider.style.transform = `translateX(${-widthSize * counter}px)`;
   projectSlider.style.transition = 'transform 0.4s ease-in-out';
-  prevButton.style.display = counter === 0 ? 'none' : 'inline';
-  nextButton.style.display = counter === (projectItems.length - 1) ? 'none' : 'inline';
+  prevButton.style.display = (counter === 0 ? 'none' : 'inline');
+  nextButton.style.display = (counter === (projectItems.length - 1) ? 'none' : 'inline');
 });
 
 window.addEventListener("resize", () => {

@@ -111,9 +111,13 @@ dd {
 /* Navbar */
 #navbar {
   display: flex;
+  position: fixed;
+  width: 100%;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  z-index: 2;
 
   background: var(--color-LightBlue);
 }
@@ -149,6 +153,8 @@ dd {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
+
+  padding-top: 110px;
 }
 
 .home > img {
@@ -172,19 +178,19 @@ dd {
 
 .project__slider {
   display: flex;
-  width: calc(100% * 3);
+  width: calc(100% * 2);
   /* animation: slide 10s infinite; */
 }
 
 .project__item {
   position: relative;
-  width: calc(100% / 3);
+  width: calc(100% / 2);
 }
 
 
 .project__img > .main-img {
   width: 1000px;
-  height: 500px;
+  height: 550px;
 }
 
 .arrow-button {
@@ -194,7 +200,7 @@ dd {
   height: 100px;
 
   cursor: pointer;
-  z-index: 2;
+  z-index: 3;
 }
 
 .prev {
