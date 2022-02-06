@@ -177,6 +177,7 @@ dd {
 }
 
 .project__item {
+  position: relative;
   width: calc(100% / 3);
 }
 
@@ -186,18 +187,18 @@ dd {
   height: 500px;
 }
 
-.project__img > .arrow-button {
+.arrow-button {
   position: absolute;
   top: 47%;
   width: 95px;
   height: 100px;
 
   cursor: pointer;
+  z-index: 2;
 }
 
 .prev {
   left: 0;
-  z-index: 2;
 }
 
 .next {
