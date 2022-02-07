@@ -224,3 +224,13 @@ dd {
     height: 250px;
   }
 }
+
+@media screen and (max-width:413px){
+  h1, dt {
+    font-size: var(--font-medium);
+  }
+  
+  h2, h3, p, dd {
+    font-size: var(--font-small);
+  }
+}
