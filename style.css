@@ -135,14 +135,15 @@ dd {
 }
 
 .navbar__menu__item {
-  padding: 0px 20px;
+  padding: 5px 10px;
+  margin: 0px 10px;
   font-size: var(--font-regular);
   font-weight: var(--weight-regular);
   color: var(--color-white);
   cursor: pointer;
 }
 
-.selected {
+.navbar__menu__item:hover {
   border-bottom: 1px solid var(--color-white);
 }
 
@@ -230,7 +231,12 @@ dd {
     font-size: var(--font-medium);
   }
   
-  h2, h3, p, dd {
+  h2, h3, p, dd, .navbar__menu__item {
     font-size: var(--font-small);
+  }
+
+  .project__img > .main-img {
+    width: 440px;
+    height: 240px;
   }
 }
